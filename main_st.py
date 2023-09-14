@@ -1,3 +1,5 @@
+# LangChain RetrievalQA, ChromaDB, Streamlt
+
 import streamlit as st
 import os
 from streamlit_chat import message
@@ -12,8 +14,7 @@ from langchain.document_loaders import DirectoryLoader
 from collections import Counter
 from langchain.prompts import PromptTemplate
 
-os.environ["OPENAI_API_KEY"] = "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"
-# openai.api_key = "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"
+os.environ["OPENAI_API_KEY"] = "OpenAI_API_KEY"
 
 loader = DirectoryLoader('./data', glob="*.txt", loader_cls=TextLoader)
 documents = loader.load()

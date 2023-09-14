@@ -1,3 +1,5 @@
+# openai.ChatCompletion, Streamlt
+
 import openai
 import streamlit as st
 import os, tenacity
@@ -10,7 +12,7 @@ from openai.embeddings_utils import get_embedding
 from streamlit_chat import message
 
 
-openai.api_key = "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"
+openai.api_key = "OpenAI_API_KEY"
 
 folder_path = './data'
 file_name = 'embedding.csv'
